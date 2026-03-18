@@ -169,7 +169,7 @@ app.post('/api/chat', async (req, res) => {
     return res.status(500).json({ error: 'GEMINI_API_KEY not configured on server' });
   }
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-001:generateContent?key=${apiKey}`;
 
   try {
     const geminiRes = await fetch(url, {
