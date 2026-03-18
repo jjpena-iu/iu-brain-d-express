@@ -18,7 +18,7 @@ export default function Topbar({ phase }) {
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <img
-            src="/iu-brain/logo-hiumanlab.png"
+            src="/iu-brain-backend-d-express/logo-hiumanlab.png"
             alt="Hiumanlab"
             style={{ height: '22px', display: 'block' }}
           />
