@@ -18,7 +18,7 @@ function PdfDocument({ reportMarkdown, clientName }) {
         <div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
             <img
-              src="/iu-brain/logo-hiumanlab.png"
+              src="/iu-brain-backend-d-express/logo-hiumanlab.png"
               alt="Hiumanlab"
               style={{ height: '28px', display: 'block' }}
             />
