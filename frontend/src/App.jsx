@@ -3,7 +3,7 @@ import { Brain, Send, FileText, CheckCircle2, Loader2, User, Download, Copy } fr
 import { motion, AnimatePresence } from 'motion/react';
 import ReactMarkdown from 'react-markdown';
 import { sendChatMessage, extractReport, stripReportMarkers } from './services/api.js';
-
+ 
 const PHASES = [
   { id: 1, label: 'Contexto del Negocio', time: '0-5 min' },
   { id: 2, label: 'Procesos y Tareas', time: '5-15 min' },
