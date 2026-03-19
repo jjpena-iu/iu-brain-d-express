@@ -335,7 +335,8 @@ app.post('/api/send-report', async (req, res) => {
 </body>
 </html>`;
 
-  const recipients = [consultorEmail];
+  const OWNER_EMAIL = process.env.OWNER_EMAIL || consultorEmail;
+  const recipients = [OWNER_EMAIL];
   if (clientEmail && clientEmail.trim() && clientEmail !== consultorEmail) {
     recipients.push(clientEmail.trim());
   }
@@ -345,7 +346,7 @@ app.post('/api/send-report', async (req, res) => {
     const { data, error } = await resend.emails.send({
       from: 'iu Brain <onboarding@resend.dev>',
       to: recipients,
-      subject: `Diagnóstico Express${clientName ? ` — ${clientName}` : ''} | Hiumanlab`,
+      subject: `Diagnóstico Express${clientName ? ` — ${clientName}` : ''} | Hiumanlab${clientEmail ? ` (cliente: ${clientEmail})` : ''}`,
       html: htmlBody,
     });
 
