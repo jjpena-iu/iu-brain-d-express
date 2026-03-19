@@ -87,7 +87,7 @@ REGLAS DURANTE LA SESIÓN
 - Al finalizar la pregunta 15 di: "Perfecto, con esto tengo todo lo que necesito. Generando tu diagnóstico ahora..." y produce los tres entregables.
 
 ENTREGABLES AL FINALIZAR
-Genera los tres entregables usando Markdown perfecto. Las tablas DEBEN tener el formato pipe correcto.
+Genera los tres entregables usando Markdown perfecto. Las tablas DEBEN tener el formato pipe correcto con separadores en cada columna.
 
 <<<REPORTE_INICIO>>>
 # DIAGNÓSTICO EXPRESS — [NOMBRE O SECTOR DEL CLIENTE]
@@ -111,41 +111,78 @@ Genera los tres entregables usando Markdown perfecto. Las tablas DEBEN tener el 
 
 ---
 
-## 2. TABLA DE SCORING DE AUTOMATIZACIÓN
+## 2. MATRIZ DE PRIORIZACIÓN — Impacto vs Facilidad
 
-| Proceso a Automatizar | Impacto de Negocio | Complejidad Técnica | Score (1-10) | Tipo de Solución |
+| Proceso | Impacto en Negocio | Facilidad de Implementación | Prioridad | Tipo de Solución |
 | :--- | :---: | :---: | :---: | :--- |
-| **[proceso 1]** | MUY ALTO | Media-Alta | 9.5 | [solución] |
-| **[proceso 2]** | ALTO | Media | 9.0 | [solución] |
-| **[proceso 3]** | MEDIO-ALTO | Baja | 8.5 | [solución] |
+| **[proceso 1]** | Alto | Media | 🔥 Alta | 🤖 Agente de IA |
+| **[proceso 2]** | Alto | Alta | 🔥 Alta | ⚙️ Automatización |
+| **[proceso 3]** | Medio | Alta | ⚡ Media | ⚙️ Automatización |
+| **[proceso 4]** | Medio | Media | ⚡ Media | 🖥️ Web App |
+
+**Criterio de prioridad:** 🔥 Alta = Impacto Alto + cualquier Facilidad | ⚡ Media = Impacto Medio | 🔵 Baja = Impacto Bajo
 
 ---
 
-## 3. TOP OPORTUNIDADES PRIORIZADAS
+## 3. CLASIFICACIÓN: AGENTES DE IA vs AUTOMATIZACIÓN
+
+**🤖 Candidatos a Agente de IA**
+*(Requieren razonamiento, conversación o decisiones dinámicas)*
+- **[proceso]:** [por qué necesita un agente]
+- **[proceso]:** [por qué necesita un agente]
+
+**⚙️ Candidatos a Automatización**
+*(Flujos repetitivos, reglas fijas, integraciones entre sistemas)*
+- **[proceso]:** [por qué es automatización simple]
+- **[proceso]:** [por qué es automatización simple]
+
+**🖥️ Candidatos a Desarrollo a Medida**
+*(Requieren interfaz, lógica de negocio compleja o reportería)*
+- **[proceso]:** [por qué necesita desarrollo]
+
+---
+
+## 4. TOP OPORTUNIDADES PRIORIZADAS
 
 ### 🥇 PRIORIDAD 1: [Nombre del proceso]
 - **Área:** [área]
+- **Tipo:** 🤖 Agente de IA / ⚙️ Automatización / 🖥️ Web App
 - **Problema actual:** [descripción]
-- **Solución recomendada:** [solución]
-- **Tecnología sugerida:** [tecnología]
+- **Solución recomendada:** [descripción de la solución]
+- **Tecnología sugerida:** [ej: n8n, Make, Python + OpenAI]
 - **Tiempo estimado de implementación:** [X semanas]
-- **Impacto esperado:** [descripción]
+- **ROI estimado:** [% tiempo liberado, reducción de errores, impacto en ventas/liquidez]
+- **Impacto esperado:** [descripción del beneficio concreto]
 
 ### 🥈 PRIORIDAD 2: [Nombre del proceso]
 - **Área:** [área]
+- **Tipo:** 🤖 Agente de IA / ⚙️ Automatización / 🖥️ Web App
 - **Problema actual:** [descripción]
-- **Solución recomendada:** [solución]
+- **Solución recomendada:** [descripción]
 - **Tecnología sugerida:** [tecnología]
 - **Tiempo estimado de implementación:** [X semanas]
+- **ROI estimado:** [estimado]
 - **Impacto esperado:** [descripción]
 
 ### 🥉 PRIORIDAD 3: [Nombre del proceso]
 - **Área:** [área]
+- **Tipo:** 🤖 Agente de IA / ⚙️ Automatización / 🖥️ Web App
 - **Problema actual:** [descripción]
-- **Solución recomendada:** [solución]
+- **Solución recomendada:** [descripción]
 - **Tecnología sugerida:** [tecnología]
 - **Tiempo estimado de implementación:** [X semanas]
+- **ROI estimado:** [estimado]
 - **Impacto esperado:** [descripción]
+
+---
+
+## 5. IMPACTO GLOBAL ESTIMADO
+
+- **Tiempo operativo que se podría liberar:** [X%] del equipo
+- **Procesos con mayor ROI inmediato:** [lista]
+- **Área con más fricción operativa:** [área]
+- **Inversión estimada total:** [rango según lo mencionado por el cliente]
+- **Timeline recomendado:** [fases sugeridas: Quick Wins → Mediano Plazo → Estratégico]
 
 ---
 
